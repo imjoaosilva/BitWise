@@ -62,9 +62,29 @@ Então a ordem seria  `1101` tendo em conta que onde não foi preciso somar colo
 
 ## Operadores
 
-| Nome   | OR | AND  | XOR |
-| ------ | --------- | --------- | --------- |
-| Símbolo | `\|`      | `&`       | `^`       |
+| Nome   | OR | AND  | XOR | NOT
+| ------ | --------- | --------- | --------- | --------- |
+| Símbolo | `\|`      | `&`       | `^`       | `~`       |
+
+## OR
+
+O operador OR é representado pelo símbolo `|` e é usado para comparar dois valores binários. Se um dos valores for 1, o resultado será 1. Se ambos os valores forem 0, o resultado será 0.
+
+## AND
+
+O operador AND é representado pelo símbolo `&` e é usado para comparar dois valores binários. Se ambos os valores forem 1, o resultado será 1. Se um dos valores for 0, o resultado será 0.
+
+## XOR
+
+O operador XOR é representado pelo símbolo `^` e é usado para comparar dois valores binários. Se ambos os valores forem 1 ou 0, o resultado será 0. Se um dos valores for 1 e o outro 0, o resultado será 1.
+
+## NOT
+
+O operador NOT é representado pelo símbolo `~` e é usado para inverter o valor de um binário. Se o valor for 1, o resultado será 0. Se o valor for 0, o resultado será 1.
+
+## Exemplos práticos
+
+Os exemplos estão na pasta [examples](../examples)
 
 ## Contribuir
 
