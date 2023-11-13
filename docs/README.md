@@ -65,3 +65,7 @@ Então a ordem seria  `1101` tendo em conta que onde não foi preciso somar colo
 | Nome   | OR | AND  | XOR |
 | ------ | --------- | --------- | --------- |
 | Símbolo | `\|`      | `&`       | `^`       |
+
+## Contribuir
+
+Se você quiser contribuir com este projeto, leia o [CONTRIBUTING.md](CONTRIBUTING.md) para obter detalhes sobre o nosso código de conduta e o processo de envio de solicitações pull para nós.
