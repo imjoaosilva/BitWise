@@ -62,9 +62,9 @@ Então a ordem seria  `1101` tendo em conta que onde não foi preciso somar colo
 
 ## Operadores
 
-| Nome   | OR | AND  | XOR | NOT
-| ------ | --------- | --------- | --------- | --------- |
-| Símbolo | `\|`      | `&`       | `^`       | `~`       |
+| Nome   | OR | AND  | XOR | NOT | Left Shift | Right Shift |
+| ------ | --------- | --------- | --------- | --------- | --------- | --------- |
+| Símbolo | `\|`      | `&`       | `^`       | `~`       | `<<`     | `>>`      |
 
 ## OR
 
@@ -81,6 +81,14 @@ O operador XOR é representado pelo símbolo `^` e é usado para comparar dois v
 ## NOT
 
 O operador NOT é representado pelo símbolo `~` e é usado para inverter o valor de um binário. Se o valor for 1, o resultado será 0. Se o valor for 0, o resultado será 1.
+
+## Left Shift
+
+O operador Left Shift é representado pelo símbolo `<<` e é usado para mover os bits para a esquerda. O valor do bit mais à esquerda é descartado e um 0 é adicionado à direita. O valor do bit mais à direita é descartado.
+
+## Right Shift
+
+O operador Right Shift é representado pelo símbolo `>>` e é usado para mover os bits para a direita. O valor do bit mais à direita é descartado e um 0 é adicionado à esquerda. O valor do bit mais à esquerda é descartado.
 
 ## Exemplos práticos
 
