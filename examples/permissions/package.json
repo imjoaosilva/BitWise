@@ -1,0 +1,17 @@
+{
+  "name": "permissions",
+  "version": "1.0.0",
+  "description": "A simple permissions system based on bitwise operations",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "npx tsc-watch --onSuccess \"node ./dist/index.js\"",
+    "start": "node dist/index.js"
+  },
+  "keywords": ["typescript", "node", "express", "bitwise", "permissions", "based on discord"],
+  "author": "João Silva",
+  "license": "ISC",
+  "dependencies": {
+    "tsc": "^2.0.4",
+    "typescript": "^5.2.2"
+  }
+}
