@@ -51,8 +51,7 @@ No caso do 1 apenas iremos precisar de 1 então coloquei um (1) no 1. Então em 
 `256 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1(1)`
 
 Agora pegando o número 13
-
-`1(13) | 2 | 4(12) | 8(8) | 16 | 32 | 64 | 128 | 256`
+`256 | 128 | 64 | 32 | 16 | 8(8) | 4(12) | 2 | 1(1)`
 
 
 Seguindo esta lógica conseguimos somar até completar **13** (8+4+1)
