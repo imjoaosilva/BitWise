@@ -70,25 +70,133 @@ Então a ordem seria  `1101` tendo em conta que onde não foi preciso somar colo
 
 O operador OR é representado pelo símbolo `|` e é usado para comparar dois valores binários. Se um dos valores for 1, o resultado será 1. Se ambos os valores forem 0, o resultado será 0.
 
+### Exemplo
+
+```js
+let num1 = 1; // 0001
+let num2 = 10; // 1010
+
+/*
+    0 0 0 1
+    1 0 1 0
+
+    1 0 1 1
+*/
+
+let result = num1 | num2;
+
+console.log(result); // 11 (1011)
+```
+
+
 ## AND
 
 O operador AND é representado pelo símbolo `&` e é usado para comparar dois valores binários. Se ambos os valores forem 1, o resultado será 1. Se um dos valores for 0, o resultado será 0.
+
+### Exemplo
+
+```js
+    let num1 = 1; // 0001
+    let num2 = 10; // 1010
+
+    let all = num1 | num2; // 11 (1011)
+
+    /*
+        0 0 0 1
+        1 0 1 1
+
+        0 0 0 1
+    */
+
+    let result = all & num1; // 1 (0001)
+
+    if (result) {
+        console.log('O número 1 está presente'); // este escopo será executado
+    }
+```
+
 
 ## XOR
 
 O operador XOR é representado pelo símbolo `^` e é usado para comparar dois valores binários. Se ambos os valores forem 1 ou 0, o resultado será 0. Se um dos valores for 1 e o outro 0, o resultado será 1.
 
+### Exemplo
+
+```js
+    let num1 = 1; // 0001
+    let num2 = 10; // 1010
+
+    /*
+        0 0 0 1
+        1 0 1 0
+
+        1 0 1 1
+    */
+
+    let result = num1 ^ num2; // 11 (1011)
+
+    console.log(result); // 11 (1011)
+```
+
 ## NOT
 
 O operador NOT é representado pelo símbolo `~` e é usado para inverter o valor de um binário. Se o valor for 1, o resultado será 0. Se o valor for 0, o resultado será 1.
+
+### Exemplo
+    
+```js
+    let num1 = 1; // 0001
+
+    /*
+        0 0 0 1
+
+        1 1 1 0
+    */
+
+    let result = ~num1;
+
+    console.log(result); // 14 (1110)
+```
 
 ## Left Shift
 
 O operador Left Shift é representado pelo símbolo `<<` e é usado para mover os bits para a esquerda. O valor do bit mais à esquerda é descartado e um 0 é adicionado à direita. O valor do bit mais à direita é descartado.
 
+### Exemplo
+    
+```js
+    let num1 = 1; // 0001
+
+    /*
+        0 0 0 1
+
+        0 0 1 0
+    */
+
+    let result = num1 << 1;
+
+    console.log(result); // 2 (0010)
+```
+
 ## Right Shift
 
 O operador Right Shift é representado pelo símbolo `>>` e é usado para mover os bits para a direita. O valor do bit mais à direita é descartado e um 0 é adicionado à esquerda. O valor do bit mais à esquerda é descartado.
+
+### Exemplo
+
+```js
+    let num1 = 1; // 0001
+
+    /*
+        0 0 0 1
+
+        0 0 0 0
+    */
+
+    let result = num1 >> 1;
+
+    console.log(result); // 0 (0000)
+```
 
 ## Exemplos práticos
 
