@@ -51,6 +51,7 @@ No caso do 1 apenas iremos precisar de 1 então coloquei um (1) no 1. Então em 
 `256 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1(1)`
 
 Agora pegando o número 13
+
 `256 | 128 | 64 | 32 | 16 | 8(8) | 4(12) | 2 | 1(1)`
 
 
