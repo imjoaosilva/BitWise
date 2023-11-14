@@ -72,21 +72,21 @@ O operador OR é representado pelo símbolo `|` e é usado para comparar dois va
 
 ### Exemplo
 
-    ```js
-        let num1 = 1; // 0001
-        let num2 = 10; // 1010
+```js
+let num1 = 1; // 0001
+let num2 = 10; // 1010
 
-        /*
-            0 0 0 1
-            1 0 1 0
+/*
+    0 0 0 1
+    1 0 1 0
 
-            1 0 1 1
-        */
+    1 0 1 1
+*/
 
-        let result = num1 | num2;
+let result = num1 | num2;
 
-        console.log(result); // 11 (1011)
-    ```
+console.log(result); // 11 (1011)
+```
 
 
 ## AND
@@ -122,21 +122,21 @@ O operador XOR é representado pelo símbolo `^` e é usado para comparar dois v
 
 ### Exemplo
 
-    ```js
-        let num1 = 1; // 0001
-        let num2 = 10; // 1010
+```js
+    let num1 = 1; // 0001
+    let num2 = 10; // 1010
 
-        /*
-            0 0 0 1
-            1 0 1 0
+    /*
+        0 0 0 1
+        1 0 1 0
 
-            1 0 1 1
-        */
+        1 0 1 1
+    */
 
-        let result = num1 ^ num2; // 11 (1011)
+    let result = num1 ^ num2; // 11 (1011)
 
-        console.log(result); // 11 (1011)
-    ```
+    console.log(result); // 11 (1011)
+```
 
 ## NOT
 
@@ -144,19 +144,19 @@ O operador NOT é representado pelo símbolo `~` e é usado para inverter o valo
 
 ### Exemplo
     
-    ```js
-        let num1 = 1; // 0001
-    
-        /*
-            0 0 0 1
-    
-            1 1 1 0
-        */
-    
-        let result = ~num1;
-    
-        console.log(result); // 14 (1110)
-    ```
+```js
+    let num1 = 1; // 0001
+
+    /*
+        0 0 0 1
+
+        1 1 1 0
+    */
+
+    let result = ~num1;
+
+    console.log(result); // 14 (1110)
+```
 
 ## Left Shift
 
@@ -164,19 +164,19 @@ O operador Left Shift é representado pelo símbolo `<<` e é usado para mover o
 
 ### Exemplo
     
-    ```js
-        let num1 = 1; // 0001
-    
-        /*
-            0 0 0 1
-    
-            0 0 1 0
-        */
-    
-        let result = num1 << 1;
-    
-        console.log(result); // 2 (0010)
-    ```
+```js
+    let num1 = 1; // 0001
+
+    /*
+        0 0 0 1
+
+        0 0 1 0
+    */
+
+    let result = num1 << 1;
+
+    console.log(result); // 2 (0010)
+```
 
 ## Right Shift
 
@@ -184,19 +184,19 @@ O operador Right Shift é representado pelo símbolo `>>` e é usado para mover 
 
 ### Exemplo
 
-    ```js
-        let num1 = 1; // 0001
+```js
+    let num1 = 1; // 0001
 
-        /*
-            0 0 0 1
+    /*
+        0 0 0 1
 
-            0 0 0 0
-        */
+        0 0 0 0
+    */
 
-        let result = num1 >> 1;
+    let result = num1 >> 1;
 
-        console.log(result); // 0 (0000)
-    ```
+    console.log(result); // 0 (0000)
+```
 
 ## Exemplos práticos
 
