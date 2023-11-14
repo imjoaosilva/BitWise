@@ -22,6 +22,9 @@ export default class Server {
         // Using body-parser to parse JSON bodies into JS objects
         this.app.use(bodyParser.json());
 
+        // Using body-parser to parse URL encoded bodies into JS objects
+        this.app.use(bodyParser.urlencoded({ extended: true }));
+
         // Starting the server on the specified port
         this.app.listen(PORT, () => {
             console.log(`Server running on port ${PORT}`);
