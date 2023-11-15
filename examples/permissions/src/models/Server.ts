@@ -1,5 +1,4 @@
 import express, { Application } from 'express';
-import bodyParser from 'body-parser';
 
 export default class Server {
 
@@ -17,13 +16,11 @@ export default class Server {
     start = () => {
 
         // Creating a variable to store the port number (default: 3000)
-        let PORT = process.env.PORT || 3000;
+        const PORT = process.env.PORT || 3000;
 
-        // Using body-parser to parse JSON bodies into JS objects
-        this.app.use(bodyParser.json());
+        this.app.use(express.json());
+        this.app.use(express.urlencoded({ extended: true }));
 
-        // Using body-parser to parse URL encoded bodies into JS objects
-        this.app.use(bodyParser.urlencoded({ extended: true }));
 
         // Starting the server on the specified port
         this.app.listen(PORT, () => {
