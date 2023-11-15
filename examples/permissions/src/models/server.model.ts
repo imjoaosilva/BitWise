@@ -1,5 +1,6 @@
 import express, { Application, Request } from 'express';
 import user_route from '../routes/user.route';
+import auth_route from '../routes/auth.route';
 
 export default class Server {
 
@@ -27,6 +28,9 @@ export default class Server {
 
         // Adding user route
         this.app.use('/api/v1/user', user_route)
+
+        // Adding auth route
+        this.app.use('/api/v1/auth', auth_route)
 
         // Starting the server on the specified port
         this.app.listen(PORT, () => {

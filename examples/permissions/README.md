@@ -1,11 +1,12 @@
 ## Base URL: `protocol://ip:port/api/v1`
 
-| Endpoint | Description |
-| --- | --- |
-| /login | Authenticates a user and returns a JWT token |
-| /logout | Invalidates a JWT token |
-| /users | Returns a list of all users |
-| /users/{id} | Returns a specific user by ID |
+| Endpoint | Type | Description |
+| --- | --- | --- |
+| /users | GET | Get all users |
+| /users | POST | Create a new user |
+| /users | PUT | Update user details |
+| /users/:id | GET | Get user details |
+| /auth/login | POST | Login |
 
 | Flag Name | Value |
 | --- | --- |
@@ -14,4 +15,3 @@
 | WRITE_USER_DETAILS | 0x0000000000000100 (1 << 2) |
 | DELETE_USER | 0x0000000000001000 (1 << 3) |
 | ADMIN | 0x0000000000010000 (1 << 4) |
-| SUPER_ADMIN | 0x0000000000100000 (1 << 5) |
