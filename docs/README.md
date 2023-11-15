@@ -1,86 +1,90 @@
-# Bitwise em JavaScript
+# Languages
 
-Este projeto tem como objetivo fornecer recursos educacionais sobre operações bitwise em JavaScript. Explore os exemplos práticos e conceitos fundamentais para entender como bitwise pode ser aplicado em desenvolvimento.
+Portuguese [pt](./pt/README.md)
 
-## O que é um bit?
+# Bitwise in JavaScript
 
-Um bit é a unidade fundamental de informação em computadores e representa o menor elemento de dados em um sistema digital.
+This project aims to provide educational resources on bitwise operations in JavaScript. Explore practical examples and fundamental concepts to understand how bitwise can be applied in development.
 
-## Valor de um bit
+## What is a bit?
 
-O valor de um bit pode variar de `0` e `1`.
+A bit is the fundamental unit of information in computers and represents the smallest data element in a digital system.
 
-## O que é um binario?
+## Value of a bit
 
-Um binário é um conjunto de bits. Podemos dizer que o binário com 4 bits `0010` é 2 
+The value of a bit can vary between `0` and `1`.
 
-## Décimal para Binário
+## What is a binary?
 
-Existem várias formas para converter um décimal para um binário mas em baixo deixo algumas técnicas para facilitar.
+A binary is a set of bits. We can say that the binary with 4 bits `0010` is 2
 
-- **Primeira Técnica**
+## Decimal to Binary
 
-Vamos começar por um número simples por exemplo **1**
+There are several ways to convert a decimal to binary, but below I leave some techniques to make it easier.
 
-**1÷2** que vai ter **1** como resto e **0** como quociente.
+- **First Technique**
 
-Com o cálculo acima podemos afirmar que o resto é a representação binária. Em um binário de 4 bits podemos dizer que o decimal 1 representa-se com 0001.
+Let's start with a simple number, for example **1**
 
-Agora vamos tentar o número 13.
+**1÷2** which will have **1** as remainder and **0** as quotient.
 
-**13/2** que vai ter **1** como resto e **6** como quociente.
+With the calculation above we can say that the remainder is the binary representation. In a 4-bit binary we can say that decimal 1 is represented as 0001.
 
-**6/2** que vai ter **0** como resto e **3** como quociente.
+Now let's try number 13.
 
-**3/2** que vai ter **1** como resto e **1** como quociente.
+**13/2** which will have **1** as remainder and **6** as quotient.
 
-**1/2** que vai ter 1 como resto e 0 como quociente.
+**6/2** which will have **0** as remainder and **3** as quotient.
 
-Então o decimal de 13 em um binário de 4 bits seria **1101**
+**3/2** which will have **1** as remainder and **1** as quotient.
 
-- **Segunda Técnica**
+**1/2** which will have 1 as remainder and 0 as quotient.
+
+So the decimal of 13 in a 4-bit binary would be **1101**
+
+- **Second Technique**
 
 `256 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1`
 
-Pegando os exemplos dos números da primeira técnica vamos começar pelo numero **1**.
+Taking the examples of numbers from the first technique, let's start with the number **1**.
 
-Pegamos a lista de números acima e somamos os números que se encontram até obter o décimal.
+We take the list of numbers above and add the numbers together until we get the decimal.
 
-No caso do 1 apenas iremos precisar de 1 então coloquei um (1) no 1. Então em um binário de 4 bits podemos dizer que o décimal de 1 representa-se com 0001
+In the case of 1 we will only need 1 so I put a (1) in 1. So in a 4-bit binary we can say that the decimal of 1 is represented by 0001
 
 `256 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1(1)`
 
-Agora pegando o número 13
+Now taking number 13
 
 `256 | 128 | 64 | 32 | 16 | 8(8) | 4(12) | 2 | 1(1)`
 
 
-Seguindo esta lógica conseguimos somar até completar **13** (8+4+1)
+Following this logic we can add until we complete **13** (8+4+1)
 
-Então a ordem seria  `1101` tendo em conta que onde não foi preciso somar colocamos 0
+So the order would be `1101` taking into account that where it was not necessary to add we put 0
 
 
-## Operadores
+## Operators
 
-| Nome   | OR | AND  | XOR | NOT | Left Shift | Right Shift |
+| Name | OR | AND | XOR | NOT | Left Shift | Right Shift |
 | ------ | --------- | --------- | --------- | --------- | --------- | --------- |
-| Símbolo | `\|`      | `&`       | `^`       | `~`       | `<<`     | `>>`      |
+| Symbol | `\|` | `&` | `^` | `~` | `<<` | `>>` |
 
 ## OR
 
-O operador OR é representado pelo símbolo `|` e é usado para comparar dois valores binários. Se um dos valores for 1, o resultado será 1. Se ambos os valores forem 0, o resultado será 0.
+The OR operator is represented by the symbol `|` and is used to compare two binary values. If either value is 1, the result is 1. If both values are 0, the result is 0.
 
-### Exemplo
+### Example
 
 ```js
 let num1 = 1; // 0001
 let num2 = 10; // 1010
 
 /*
-    0 0 0 1
-    1 0 1 0
+     0 0 0 1
+     1 0 1 0
 
-    1 0 1 1
+     1 0 1 1
 */
 
 let result = num1 | num2;
@@ -89,119 +93,119 @@ console.log(result); // 11 (1011)
 ```
 
 
-## AND
+##AND
 
-O operador AND é representado pelo símbolo `&` e é usado para comparar dois valores binários. Se ambos os valores forem 1, o resultado será 1. Se um dos valores for 0, o resultado será 0.
+The AND operator is represented by the symbol `&` and is used to compare two binary values. If both values are 1, the result is 1. If either value is 0, the result is 0.
 
-### Exemplo
+### Example
 
 ```js
-    let num1 = 1; // 0001
-    let num2 = 10; // 1010
+     let num1 = 1; // 0001
+     let num2 = 10; // 1010
 
-    let all = num1 | num2; // 11 (1011)
+     let all = num1 | num2; // 11 (1011)
 
-    /*
-        0 0 0 1
-        1 0 1 1
+     /*
+         0 0 0 1
+         1 0 1 1
 
-        0 0 0 1
-    */
+         0 0 0 1
+     */
 
-    let result = all & num1; // 1 (0001)
+     let result = all & num1; // 1 (0001)
 
-    if (result) {
-        console.log('O número 1 está presente'); // este escopo será executado
-    }
+     if (result) {
+         console.log('Number 1 is present'); // this scope will be executed
+     }
 ```
 
 
-## XOR
+##XOR
 
-O operador XOR é representado pelo símbolo `^` e é usado para comparar dois valores binários. Se ambos os valores forem 1 ou 0, o resultado será 0. Se um dos valores for 1 e o outro 0, o resultado será 1.
+The XOR operator is represented by the symbol `^` and is used to compare two binary values. If both values are 1 or 0, the result is 0. If one of the values is 1 and the other 0, the result is 1.
 
-### Exemplo
+### Example
 
 ```js
-    let num1 = 1; // 0001
-    let num2 = 10; // 1010
+     let num1 = 1; // 0001
+     let num2 = 10; // 1010
 
-    /*
-        0 0 0 1
-        1 0 1 0
+     /*
+         0 0 0 1
+         1 0 1 0
 
-        1 0 1 1
-    */
+         1 0 1 1
+     */
 
-    let result = num1 ^ num2; // 11 (1011)
+     let result = num1 ^ num2; // 11 (1011)
 
-    console.log(result); // 11 (1011)
+     console.log(result); // 11 (1011)
 ```
 
-## NOT
+##NOT
 
-O operador NOT é representado pelo símbolo `~` e é usado para inverter o valor de um binário. Se o valor for 1, o resultado será 0. Se o valor for 0, o resultado será 1.
+The NOT operator is represented by the symbol `~` and is used to invert the value of a binary. If the value is 1, the result will be 0. If the value is 0, the result will be 1.
 
-### Exemplo
+### Example
     
 ```js
-    let num1 = 1; // 0001
+     let num1 = 1; // 0001
 
-    /*
-        0 0 0 1
+     /*
+         0 0 0 1
 
-        1 1 1 0
-    */
+         1 1 1 0
+     */
 
-    let result = ~num1;
+     let result = ~num1;
 
-    console.log(result); // 14 (1110)
+     console.log(result); // 14 (1110)
 ```
 
 ## Left Shift
 
-O operador Left Shift é representado pelo símbolo `<<` e é usado para mover os bits para a esquerda. O valor do bit mais à esquerda é descartado e um 0 é adicionado à direita. O valor do bit mais à direita é descartado.
+The Left Shift operator is represented by the symbol `<<` and is used to move bits to the left. The value of the leftmost bit is discarded and a 0 is added to the right. The value of the rightmost bit is discarded.
 
-### Exemplo
+### Example
     
 ```js
-    let num1 = 1; // 0001
+     let num1 = 1; // 0001
 
-    /*
-        0 0 0 1
+     /*
+         0 0 0 1
 
-        0 0 1 0
-    */
+         0 0 1 0
+     */
 
-    let result = num1 << 1;
+     let result = num1 << 1;
 
-    console.log(result); // 2 (0010)
+     console.log(result); // 2 (0010)
 ```
 
 ## Right Shift
 
-O operador Right Shift é representado pelo símbolo `>>` e é usado para mover os bits para a direita. O valor do bit mais à direita é descartado e um 0 é adicionado à esquerda. O valor do bit mais à esquerda é descartado.
+The Right Shift operator is represented by the symbol `>>` and is used to move bits to the right. The value of the rightmost bit is discarded and a 0 is added to the left. The value of the leftmost bit is discarded.
 
-### Exemplo
+### Example
 
 ```js
-    let num1 = 1; // 0001
+     let num1 = 1; // 0001
 
-    /*
-        0 0 0 1
+     /*
+         0 0 0 1
 
-        0 0 0 0
-    */
+         0 0 0 0
+     */
 
-    let result = num1 >> 1;
+     let result = num1 >> 1;
 
-    console.log(result); // 0 (0000)
+     console.log(result); // 0 (0000)
 ```
 
-## Exemplos práticos
+## Practical examples
 
-Os exemplos estão na pasta [examples](../examples)
+The examples are in the folder [examples](../examples)
 
-## Contribuir
+## Contribute
 
-Se você quiser contribuir com este projeto, leia o [CONTRIBUTING.md](CONTRIBUTING.md) para obter detalhes sobre o nosso código de conduta e o processo de envio de solicitações pull para nós.
+If you would like to contribute to this project, please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and process

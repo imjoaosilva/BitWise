@@ -1,5 +1,5 @@
-# Contribuir
+# Contribute
 
-Quando contribuir para este repositório, por favor, primeiro discuta a mudança que você deseja fazer através de uma issue ou um fork do repositório e faça uma pull request.
+When contributing to this repository, please first discuss the change you want to make via an issue or fork of the repository and make a pull request.
 
-Lembre-se que qualquer um que queira alterar devido a algum erro ortográfico ou de código pode fazê-lo à vontade já que é um projeto open-source para estudos sobre bitwise.
+Remember that anyone who wants to change it due to a spelling or code error can do so at will as it is an open-source project for bitwise studies.
