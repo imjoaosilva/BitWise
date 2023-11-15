@@ -1,6 +1,6 @@
 # Languages
 
-Portuguese [pt](./pt/README.md)
+- **Portuguese** [PT](./pt/README.md)
 
 # Bitwise in JavaScript
 
