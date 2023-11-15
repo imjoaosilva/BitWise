@@ -1,4 +1,5 @@
-import express, { Application } from 'express';
+import express, { Application, Request } from 'express';
+import user_route from '../routes/user.route';
 
 export default class Server {
 
@@ -24,6 +25,8 @@ export default class Server {
         // Adding middleware to parse urlencoded data
         this.app.use(express.urlencoded({ extended: true }));
 
+        // Adding user route
+        this.app.use('/api/v1/user', user_route)
 
         // Starting the server on the specified port
         this.app.listen(PORT, () => {
