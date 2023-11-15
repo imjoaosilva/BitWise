@@ -1,3 +1,7 @@
+# Linguagens
+
+- [Inglês](../README.md)
+
 # Bitwise em JavaScript
 
 Este projeto tem como objetivo fornecer recursos educacionais sobre operações bitwise em JavaScript. Explore os exemplos práticos e conceitos fundamentais para entender como bitwise pode ser aplicado em desenvolvimento.
