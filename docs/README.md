@@ -93,7 +93,7 @@ console.log(result); // 11 (1011)
 ```
 
 
-##AND
+## AND
 
 The AND operator is represented by the symbol `&` and is used to compare two binary values. If both values are 1, the result is 1. If either value is 0, the result is 0.
 
@@ -120,7 +120,7 @@ The AND operator is represented by the symbol `&` and is used to compare two bin
 ```
 
 
-##XOR
+## XOR
 
 The XOR operator is represented by the symbol `^` and is used to compare two binary values. If both values are 1 or 0, the result is 0. If one of the values is 1 and the other 0, the result is 1.
 
@@ -142,7 +142,7 @@ The XOR operator is represented by the symbol `^` and is used to compare two bin
      console.log(result); // 11 (1011)
 ```
 
-##NOT
+## NOT
 
 The NOT operator is represented by the symbol `~` and is used to invert the value of a binary. If the value is 1, the result will be 0. If the value is 0, the result will be 1.
 
