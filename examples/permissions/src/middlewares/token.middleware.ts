@@ -26,13 +26,8 @@ export const TokenMiddleware = async (req: Request, res: Response, next: NextFun
 
         // If the user permissions are updated, generate a new token
         if(payload.permissions !== user.permissions) {
-            const newToken = generateToken(user);
-
-            return res.json({
-                status: 200,
-                message: 'Token refreshed',
-                token: newToken
-            });
+            req.user = user;
+            return next();
         }
 
         // Adding the user to the request object
@@ -44,7 +39,7 @@ export const TokenMiddleware = async (req: Request, res: Response, next: NextFun
         // If any error occurs, send the error message to the client
         res.status(400).json({
             status: 400,
-            message: error.message
+            message: "Invalid token"
         });
     }
 }

@@ -13,7 +13,12 @@ export const getUsers = async (req: Request, res: Response) => {
     res.json({
         status: 200,
         length: users.length,
-        users
+        users: users.map(user => ({
+            id: user.id,
+            email: user.email,
+            permission : user.permissions,
+            permission_str: getNamesByPermission(user.permissions)
+        }))
     })
 }
 
@@ -80,7 +85,10 @@ export const getUserById = async (req: Request, res: Response) => {
 
     res.json({
         status: 200,
-        email: user.email,
-        permission: getNamesByPermission(user.permissions)
+        user: {
+            email: user.email,
+            permission: user.permissions,
+            permission_str: getNamesByPermission(user.permissions)
+        }
     })
 }
