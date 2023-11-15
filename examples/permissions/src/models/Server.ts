@@ -18,7 +18,10 @@ export default class Server {
         // Creating a variable to store the port number (default: 3000)
         const PORT = process.env.PORT || 3000;
 
+        // Adding middleware to parse JSON data
         this.app.use(express.json());
+
+        // Adding middleware to parse urlencoded data
         this.app.use(express.urlencoded({ extended: true }));
 
 
